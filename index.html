@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cruz - Profile</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: black;
+      color: #fff;
+      font-family: 'Orbitron', sans-serif;
+      overflow: hidden;
+    }
+
+    .container {
+      text-align: center;
+      z-index: 2;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: yellow;
+      letter-spacing: 10px;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #aaa;
+    }
+
+    .socials {
+      margin-top: 20px;
+    }
+
+    .socials a {
+      margin: 0 15px;
+      font-size: 2rem;
+      color: #7f5af0;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .socials a:hover {
+      color: yellow;
+      transform: scale(1.2);
+    }
+
+    /* Stars background effect */
+    .stars {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: url('https://www.transparenttextures.com/patterns/stardust.png');
+      animation: moveStars 50s linear infinite;
+      z-index: 0;
+    }
+
+    @keyframes moveStars {
+      from { background-position: 0 0; }
+      to { background-position: -10000px 5000px; }
+    }
+
+    /* Spotify embed styling */
+    .spotify {
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <div class="stars"></div>
+  
+  <div class="container">
+    <h1>Cruz</h1>
+    <p>cruz 👑discord dev</p>
+    <div class="socials">
+      <a href="https://instagram.com/" target="_bl_cruz_._">📸</a>
+      <a href="https://discord.gg/" target="_cruzblox">💬</a>
+    </div>
+
+    <!-- Spotify Embed -->
+    <div class="spotify">
+      <iframe style="border-radius:12px" 
+        src="https://open.spotify.com/embed/track/2Gs0iF27my40p0dANv2rAg?utm_source=generator" 
+        width="300" height="80" frameBorder="0" allowfullscreen="" 
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+        loading="lazy">
+      </iframe>
+    </div>
+  </div>
+</body>
+</html>
